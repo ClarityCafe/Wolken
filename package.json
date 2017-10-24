@@ -1,0 +1,31 @@
+{
+  "name": "wolken",
+  "version": "0.0.0",
+  "description": "a weeb.sh wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarityMoe/Wolken.git"
+  },
+  "keywords": [
+    "wolke",
+    "weeb.sh",
+    "wrapper",
+    "async"
+  ],
+  "author": "sr229, Ovyerus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClarityMoe/Wolken/issues"
+  },
+  "homepage": "https://github.com/ClarityMoe/Wolken#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0"
+  }
+}
