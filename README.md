@@ -4,7 +4,9 @@ A Node.js wrapper for weeb.sh, a random anime API by @DasWolke.
 
 ### Install
 
-soon:tm:
+``npm install wolken``
+
+Documentation for this wrapper can be found [here](API.md)
 
 ### Copyright
 
