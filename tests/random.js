@@ -5,9 +5,13 @@
  
 const Wolken = require('../');
 const token = require('./token.json');
-const s = new Wolken(token, {
-    //lewd af boi
-    allowHidden: true
+const s = new Wolken({
+    keyType: 'Bearer',
+    key: token.key
 });
- 
-s.getRandom().then(res => console.log(res));
+
+s.getRandom({
+    type: 'abal',
+    tags: ['seifuku', 'glasses'],
+    filetype: 'png'
+}).then(res => console.log(res));
