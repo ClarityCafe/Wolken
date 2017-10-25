@@ -1,6 +1,6 @@
 {
   "name": "wolken",
-  "version": "0.0.1-BETA",
+  "version": "0.0.2-BETA",
   "description": "a weeb.sh wrapper",
   "main": "index.js",
   "scripts": {
