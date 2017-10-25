@@ -11,10 +11,9 @@ Weeb.sh handler
 
 | Name | Type | Description |
 | --- | --- | --- |
-| key | ``String`` | API Key |
 | options | ``Object`` | various query options |
-| options.allowHidden | ``Boolean`` | allow hidden images to be displayed.|
-| options.allowNSFW | ``Boolean`` or ``String`` | Whether to allow NSFW results. If this is a string, it should be "only". |
+| options.keyType | ``String`` | type of key to use for the API. Can be Wolke or Bearer. |
+| options.key | ``String`` | the Authorization key for weeb.sh |
 
 * [Wolken](#Wolken)
     * [new Wolken(key, [options])](#new_Wolken_new)
@@ -26,10 +25,9 @@ Weeb.sh handler
 
 | Param | Type | Description |
 | --- | --- | --- |
-| key | ``String`` | API Key |
 | options | ``Object`` | various query options |
-| options.allowHidden | ``Boolean`` | allow hidden images to be displayed.|
-| options.allowNSFW | ``Boolean`` or ``String`` | Whether to allow NSFW results. If this is a string, it should be "only". |
+| options.keyType | ``String`` | type of key to use for the API. Can be Wolke or Bearer. |
+| options.key | ``String`` | the Authorization key for weeb.sh |
 
 <a name="Wolken+getRandom"></a>
 
@@ -43,4 +41,6 @@ gets a random image from the API
 | options | ``Object`` | Options to pass to the query. |
 | options.type | ``String`` | Category of the image to get. Either this or `options.tags` are required. |
 | options.tags | ``Array<String>`` | Tags that the image should have. |
+| options.allowHidden | ``Boolean`` | allow hidden images to be displayed.|
+| options.allowNSFW | ``Boolean`` or ``String`` | Whether to allow NSFW results. If this is a string, it should be "only". |
 | options.filetype | ``String`` |  The filetype the image should be. |
