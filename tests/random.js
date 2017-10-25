@@ -3,11 +3,11 @@
  * @author Capuccino
  */
  
- const Wolken = require('../');
- const token = require('./token.json');
- const s = new Wolken(token, {
-     //lewd af boi
-     allowHidden: true
- });
+const Wolken = require('../');
+const token = require('./token.json');
+const s = new Wolken(token, {
+    //lewd af boi
+    allowHidden: true
+});
  
- s.getRandom().then(res => console.log(res));
+s.getRandom().then(res => console.log(res));
