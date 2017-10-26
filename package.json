@@ -1,6 +1,6 @@
 {
   "name": "wolken",
-  "version": "0.0.2-BETA",
+  "version": "0.0.3-BETA",
   "description": "a weeb.sh wrapper",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,7 @@
   },
   "homepage": "https://github.com/ClarityMoe/Wolken#readme",
   "dependencies": {
-    "form-data": "^2.3.1",
-    "import-export": "^1.0.1"
+    "form-data": "^2.3.1"
   },
   "devDependencies": {
     "eslint": "^4.9.0"
