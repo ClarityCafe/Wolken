@@ -3,46 +3,37 @@
 <a name="Handler"></a>
 
 ## Handler
-
 Weeb.sh handler
 
-**Kind**: Global Class
-**Properties**:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| options | ``Object`` | various query options |
-| options.keyType | ``String`` | type of key to use for the API. Can be Wolke or Bearer. |
-| options.key | ``String`` | the Authorization key for weeb.sh |
+**Kind**: global class  
 
 * [Handler](#Handler)
-    * [new Handler(key, [options])](#new_Handler_new)
-    * [.getRandom(file)](#Handler+getRandom) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
+    * [new Handler(key, [keyType])](#new_Handler_new)
+    * [.getRandom(options)](#Handler+getRandom) ⇒ <code>Promise.&lt;Object&gt;</code>
 
 <a name="new_Handler_new"></a>
 
- ### new Handler(key, {options})
+### new Handler(key, [keyType])
 
-| Param | Type | Description |
-| --- | --- | --- |
-| options | ``Object`` | various query options |
-| options.keyType | ``String`` | type of key to use for the API. Can be Wolke or Bearer. |
-| options.key | ``String`` | the Authorization key for weeb.sh |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| key | <code>String</code> |  | your API key for weeb.sh |
+| [keyType] | <code>String</code> | <code>&#x27;Bearer&#x27;</code> | Type of key you're using. Either 'Bearer' or 'Wolke' |
 
 <a name="Handler+getRandom"></a>
 
-### Handler.getRandom({options})
+### handler.getRandom(options) ⇒ <code>Promise.&lt;Object&gt;</code>
+Get's a random image from the API.
 
-gets a random image from the API
-
-**Kind**: Instance method of [``Handler``](#Handler)
-**Returns**: <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code> 
+**Kind**: instance method of [<code>Handler</code>](#Handler)  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - .  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | ``Object`` | Options to pass to the query. |
-| options.type | ``String`` | Category of the image to get. Either this or `options.tags` are required. |
-| options.tags | ``Array<String>`` | Tags that the image should have. |
-| options.allowHidden | ``Boolean`` | allow hidden images to be displayed.|
-| options.allowNSFW | ``Boolean`` or ``String`` | Whether to allow NSFW results. If this is a string, it should be "only". |
-| options.filetype | ``String`` |  The filetype the image should be. |
+| options | <code>Object</code> | Options to pass to the API. |
+| options.type | <code>String</code> | Category of the image to get. Either this or `options.tags` are required. |
+| options.tags | <code>Array.&lt;String&gt;</code> | Tags that the image should have. Either this or `options.type` are required. |
+| [options.allowNSFW] | <code>Boolean</code> \| <code>String</code> | Whether to allow NSFW results. If this is a string, it should be 'only'. |
+| [options.hidden] | <code>Boolean</code> | Whether to allow hidden results. |
+| [options.filetype] | <code>String</code> | The filetype the image should be. |
+

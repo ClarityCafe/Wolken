@@ -5,13 +5,11 @@
  
 const Wolken = require('../');
 const token = require('./token.json');
-const s = new Wolken({
-    keyType: 'Bearer',
-    key: token.key
-});
 
-s.getRandom({
-    type: 'abal',
-    tags: ['seifuku', 'glasses'],
-    filetype: 'png'
-}).then(res => console.log(res));
+const handler = new Wolken(token.key, token.keyType || 'Bearer');
+
+console.log('Starting getRandom test...');
+
+handler.getRandom({
+    type: 'pat'
+}).then(console.log).catch(console.error);
