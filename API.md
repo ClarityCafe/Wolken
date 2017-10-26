@@ -17,7 +17,7 @@ Weeb.sh handler
 
 * [Handler](#Handler)
     * [new Handler(key, [options])](#new_Handler_new)
-    * [.getSauce(file)](#Handler+getRandom) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
+    * [.getRandom(file)](#Handler+getRandom) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
 
 <a name="new_Handler_new"></a>
 
@@ -30,6 +30,8 @@ Weeb.sh handler
 | options.key | ``String`` | the Authorization key for weeb.sh |
 
 <a name="Handler+getRandom"></a>
+
+### Handler.getRandom({options})
 
 gets a random image from the API
 
