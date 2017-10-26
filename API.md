@@ -9,6 +9,9 @@ Weeb.sh handler
 
 * [Handler](#Handler)
     * [new Handler(key, [keyType])](#new_Handler_new)
+    * [.getTags([hidden])](#Handler+getTags) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
+    * [.getTypes([hidden])](#Handler+getTypes) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
+    * [.getInfo()](#Handler+getInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.getRandom(options)](#Handler+getRandom) ⇒ <code>Promise.&lt;Object&gt;</code>
 
 <a name="new_Handler_new"></a>
@@ -20,6 +23,37 @@ Weeb.sh handler
 | key | <code>String</code> |  | your API key for weeb.sh |
 | [keyType] | <code>String</code> | <code>&#x27;Bearer&#x27;</code> | Type of key you're using. Either 'Bearer' or 'Wolke' |
 
+<a name="Handler+getTags"></a>
+
+### handler.getTags([hidden]) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
+Gets a list of all the available tags in the API.
+
+**Kind**: instance method of [<code>Handler</code>](#Handler)  
+**Returns**: <code>Promise.&lt;Array.&lt;String&gt;&gt;</code> - All the available tags.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [hidden] | <code>Boolean</code> | <code>false</code> | Whether to retrieve hidden tags. |
+
+<a name="Handler+getTypes"></a>
+
+### handler.getTypes([hidden]) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
+Gets a list of all the available types in the API.
+
+**Kind**: instance method of [<code>Handler</code>](#Handler)  
+**Returns**: <code>Promise.&lt;Array.&lt;String&gt;&gt;</code> - All the available types.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [hidden] | <code>Boolean</code> | <code>false</code> | Whether to retrieve hidden types. |
+
+<a name="Handler+getInfo"></a>
+
+### handler.getInfo() ⇒ <code>Promise.&lt;Object&gt;</code>
+Gets a list of all the available tags in the API.
+
+**Kind**: instance method of [<code>Handler</code>](#Handler)  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - Information about the API.  
 <a name="Handler+getRandom"></a>
 
 ### handler.getRandom(options) ⇒ <code>Promise.&lt;Object&gt;</code>

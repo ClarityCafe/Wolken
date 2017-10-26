@@ -1,6 +1,7 @@
 /**
- * @file to test Wolken#getRandom
+ * @file Test for Wolken#getRandom.
  * @author Capuccino
+ * @author Ovyerus
  */
  
 const Wolken = require('../');
@@ -12,4 +13,8 @@ console.log('Starting getRandom test...');
 
 handler.getRandom({
     type: 'pat'
-}).then(console.log).catch(console.error);
+}).then(console.log).catch(err => {
+    console.error('getRandom test failed!');
+    console.error(err);
+    process.exit(1);
+});
