@@ -2,7 +2,7 @@
 
 <a name="Handler"></a>
 
-## Wolken
+## Handler
 
 Weeb.sh handler
 
@@ -15,13 +15,13 @@ Weeb.sh handler
 | options.keyType | ``String`` | type of key to use for the API. Can be Wolke or Bearer. |
 | options.key | ``String`` | the Authorization key for weeb.sh |
 
-* [Wolken](#Wolken)
-    * [new Wolken(key, [options])](#new_Wolken_new)
-    * [.getSauce(file)](#Wolken+getRandom) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
+* [Handler](#Handler)
+    * [new Handler(key, [options])](#new_Handler_new)
+    * [.getSauce(file)](#Handler+getRandom) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
 
-<a name="new_Wolken_new"></a>
+<a name="new_Handler_new"></a>
 
- ### new Wolken(key, {options})
+ ### new Handler(key, {options})
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -29,11 +29,11 @@ Weeb.sh handler
 | options.keyType | ``String`` | type of key to use for the API. Can be Wolke or Bearer. |
 | options.key | ``String`` | the Authorization key for weeb.sh |
 
-<a name="Wolken+getRandom"></a>
+<a name="Handler+getRandom"></a>
 
 gets a random image from the API
 
-**Kind**: Instance method of [``Wolken``](#Wolken)
+**Kind**: Instance method of [``Handler``](#Handler)
 **Returns**: <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code> 
 
 | Param | Type | Description |

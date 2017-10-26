@@ -1,3 +1,11 @@
-require('import-export');
+const Handler = require('./lib/Handler');
+const Constants = require('./lib/Constants');
 
-module.exports = require('./lib/Wolken');
+function Wolken (options) {
+    return new Handler(options);
+}
+
+Wolken.Handler = Handler;
+Wolken.Constants = Constants;
+
+module.exports = Wolken;
