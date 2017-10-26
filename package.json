@@ -1,6 +1,10 @@
 {
   "name": "wolken",
+<<<<<<< HEAD
+  "version": "0.0.3b",
+=======
   "version": "0.0.3-BETA",
+>>>>>>> 482171a5c961c1ccf88797a0630e665b6626a60b
   "description": "a weeb.sh wrapper",
   "main": "index.js",
   "scripts": {
