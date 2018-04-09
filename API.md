@@ -8,7 +8,7 @@ Weeb.sh handler
 **Kind**: global class  
 
 * [Handler](#Handler)
-    * [new Handler(key, [keyType])](#new_Handler_new)
+    * [new Handler(key, [keyType], [userAgent])](#new_Handler_new)
     * [.getTags([hidden])](#Handler+getTags) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
     * [.getTypes([hidden])](#Handler+getTypes) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
     * [.getInfo()](#Handler+getInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
@@ -16,12 +16,13 @@ Weeb.sh handler
 
 <a name="new_Handler_new"></a>
 
-### new Handler(key, [keyType])
+### new Handler(key, [keyType], [userAgent])
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | key | <code>String</code> |  | your API key for weeb.sh |
 | [keyType] | <code>String</code> | <code>&#x27;Bearer&#x27;</code> | Type of key you're using. Either 'Bearer' or 'Wolke' |
+| [userAgent] | <code>String</code> | <code>&#x27;Wolken/VERSION&#x27;</code> | The User-Agent to use for requests. Should be in the format `BotName/Version` or `BotName/Version/environment` |
 
 <a name="Handler+getTags"></a>
 
