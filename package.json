@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/ClarityMoe/Wolken#readme",
   "dependencies": {
-    "form-data": "^3.0.0"
+    "form-data": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "6.7.2"
