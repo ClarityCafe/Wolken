@@ -26,6 +26,6 @@
     "form-data": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "6.7.2"
+    "eslint": "8.18.0"
   }
 }
